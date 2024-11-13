@@ -44,7 +44,7 @@
   }
   
   .blog-header a:active {
-    color: #003d7a; /* Even darker shade for active state */
-    transform: scale(0.98); /* Slightly shrink when clicked */
+    color: #003d7a; 
+    transform: scale(0.98); 
   }
   
