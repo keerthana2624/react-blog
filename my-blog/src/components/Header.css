@@ -1,0 +1,50 @@
+.blog-header {
+    background-color: #f8f9fa; /* Light background for header */
+    padding: 20px; /* Space around the content */
+    text-align: center; /* Center-align the header content */
+    border-bottom: 2px solid #ddd; /* Subtle border at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .blog-header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Larger font size for the title */
+    color: #1568b0; /* Darker color for text */
+    font-family: 'Arial', sans-serif; /* Set font family */
+    letter-spacing: 1.5px; /* Add spacing between letters */
+  }
+  
+  .blog-header nav {
+    margin-top: 15px;
+  }
+  
+  .blog-header ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    gap: 20px; /* Space between the list items */
+  }
+  
+  .blog-header li {
+    display: inline;
+  }
+  .blog-header a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
+    font-size: 1.1em; /* Slightly larger font size */
+    font-weight: 500; /* Semi-bold font */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+  }
+  
+  .blog-header a:hover {
+    color: #0056b3; /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .blog-header a:active {
+    color: #003d7a; /* Even darker shade for active state */
+    transform: scale(0.98); /* Slightly shrink when clicked */
+  }
+  
