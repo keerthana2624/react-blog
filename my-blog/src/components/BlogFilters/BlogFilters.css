@@ -1,0 +1,73 @@
+.blog-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .filter-group {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .filter-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .filter-group select:focus {
+    border-color: #007bff;
+  }
+  
+  .tags-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .tag-checkbox input {
+    margin-right: 8px;
+    transform: scale(1.2);
+  }
+  
+  .tag-checkbox input:checked {
+    background-color: #007bff;
+  }
+  
+  .tag-checkbox input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .filter-group {
+      width: 100%;
+    }
+  }
+  
