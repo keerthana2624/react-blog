@@ -1,0 +1,48 @@
+/* RichTextEditor.css */
+
+.rich-editor {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .rich-editor__toolbar {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .toolbar-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .toolbar-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .rich-editor__content {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+  }
+  
+  .rich-editor__content.error {
+    border-color: #e74c3c;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
