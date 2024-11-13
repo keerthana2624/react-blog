@@ -21,8 +21,6 @@ A blog platform built with React and Vite.
 ## Screenshot
 
 
-
-
 ## What I Learned
 > Understanding React component structure and lifecycle.
 > Using Vite for faster development and hot module replacement.
