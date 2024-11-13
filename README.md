@@ -27,3 +27,17 @@ A blog platform built with React and Vite.
 > Understanding React component structure and lifecycle.
 > Using Vite for faster development and hot module replacement.
 > Styling React components with CSS for responsive design.
+
+
+<!-- Assignment-1 -->
+
+
+## Styling Approach
+I used simple CSS to make the blog look nice and clear. The blog list has a light background, and each blog post has rounded corners and a shadow for depth. When you hover over a post, it slightly grows and shows a bigger shadow. The design adjusts to fit smaller screens.
+
+## New Features
+BlogList.css is added 
+
+## Screenshots
+![alt text](image-1.png)
+

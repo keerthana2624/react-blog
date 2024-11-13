@@ -1,3 +1,7 @@
+
+import React from 'react';
+import './Posts.css'; 
+
 export const posts = [
     {
       id: 1,
@@ -15,5 +19,4 @@ export const posts = [
       date: "2024-03-16",
       readTime: 3
     },
-    // Add 1-2 more sample posts
   ];

@@ -1,0 +1,83 @@
+/* Container for the entire post list */
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual post card styling */
+  .post-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for post cards */
+  .post-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title styling */
+  .post-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Change title color on hover */
+  .post-title:hover {
+    color: #1e90ff;
+  }
+  
+  /* Content styling */
+  .post-content {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Author and date section */
+  .post-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  /* Read time styling */
+  .read-time {
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .post-card {
+      padding: 15px;
+    }
+  
+    .post-title {
+      font-size: 1.5rem;
+    }
+  
+    .post-content {
+      font-size: 0.95rem;
+    }
+  
+    .post-meta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
