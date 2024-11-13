@@ -1,0 +1,59 @@
+/* Blog List Styling */
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f2f4f8; /* Light background to differentiate section */
+    border-radius: 10px; /* Rounded corners for a subtle effect */
+  }
+  
+  /* Blog Post Card Styling */
+  .blog-post {
+    background-color: #ffffff; /* White background for each card */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+  
+  .blog-post h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Darker title color */
+  }
+  .blog-post p {
+    font-size: 1em;
+    color: #666; /* Medium gray for text */
+    line-height: 1.5;
+  }
+  
+  .blog-post .author-date {
+    font-size: 0.9em;
+    color: #999; /* Lighter gray for meta info */
+    margin-bottom: 10px;
+  }
+  
+  .blog-post .read-time {
+    font-size: 0.9em;
+    color: #007bff; /* Subtle blue for read time */
+    font-weight: bold;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .blog-list {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+  
+    .blog-post {
+      padding: 10px;
+    }
+  }
