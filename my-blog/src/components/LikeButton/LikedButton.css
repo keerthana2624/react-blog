@@ -1,0 +1,45 @@
+/* Basic styling for the like button */
+.like-button {
+    display: flex;
+    align-items: center;
+    background-color: #df3333;
+    border: 2px solid #df3333;
+    border-radius: 25px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    user-select: none;
+  }
+  
+  /* Change button color and border on hover */
+  .like-button:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+  }
+  
+  /* Style when the button is liked */
+  .like-button--liked {
+    background-color: #ffcccb; /* Light red background when liked */
+    border-color: #e57373;     /* Red border when liked */
+  }
+  
+  /* Icon style */
+  .like-button__icon {
+    margin-right: 8px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Animate icon on hover */
+  .like-button:hover .like-button__icon {
+    transform: scale(1.2);
+  }
+  
+  /* Count style */
+  .like-button__count {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
