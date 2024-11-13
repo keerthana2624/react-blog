@@ -1,0 +1,60 @@
+/* TagInput.css */
+
+.tag-input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    gap: 5px;
+  }
+  
+  .tag-input.error {
+    border-color: #e74c3c;
+  }
+  
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .tag {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .tag-remove {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .tag-remove:hover {
+    color: #ffdddd;
+  }
+  
+  input[type="text"] {
+    border: none;
+    flex-grow: 1;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    min-width: 100px;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  

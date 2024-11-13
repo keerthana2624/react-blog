@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// import './TagInput.css';
+import './TagInput.css';
 
 function TagInput({ tags, onChange, onBlur, error }) {
   const [inputValue, setInputValue] = useState('');
