@@ -1,0 +1,59 @@
+/* Blog List Styling */
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #eef2f7; /* Subtle background for better readability */
+    gap: 15px;
+  }
+  
+  /* Blog Post Card Styling */
+  .blog-post {
+    background-color: #fff;
+    border: 1px solid #ccc; /* Soft border for definition */
+    border-radius: 8px; /* Smooth corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for dimension */
+    padding: 20px;
+    transition: all 0.2s ease-in-out; /* Hover effect */
+    width: 300px; /* Consistent card size */
+  }
+  
+  .blog-post:hover {
+    transform: scale(1.02); /* Subtle zoom effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  }
+  
+  .blog-post h2 {
+    font-size: 1.6em;
+    margin-bottom: 12px;
+    color: #2a2a2a; /* Darker color for title emphasis */
+  }
+
+  .blog-post p {
+    font-size: 1em;
+    color: #555; /* Neutral gray for content text */
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .blog-post .author-date {
+    font-size: 0.85em;
+    color: #888; /* Soft gray for author and date */
+    margin-bottom: 8px;
+  }
+  
+  .blog-post .read-time {
+    font-size: 0.85em;
+    color: #0056b3; /* Blue accent for read time */
+    font-weight: 600;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .blog-post {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 15px;
+    }
+  }
+  
