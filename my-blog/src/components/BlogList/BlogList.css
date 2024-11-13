@@ -1,59 +1,59 @@
 /* Blog List Styling */
 .blog-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 20px;
-    background-color: #f2f4f8; /* Light background to differentiate section */
-    border-radius: 10px; /* Rounded corners for a subtle effect */
+    background-color: #eef2f7; /* Subtle background for better readability */
+    gap: 15px;
   }
   
   /* Blog Post Card Styling */
   .blog-post {
-    background-color: #ffffff; /* White background for each card */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 15px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    background-color: #fff;
+    border: 1px solid #ccc; /* Soft border for definition */
+    border-radius: 8px; /* Smooth corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for dimension */
+    padding: 20px;
+    transition: all 0.2s ease-in-out; /* Hover effect */
+    width: 300px; /* Consistent card size */
   }
   
   .blog-post:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transform: scale(1.02); /* Subtle zoom effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
   }
   
   .blog-post h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333; /* Darker title color */
+    font-size: 1.6em;
+    margin-bottom: 12px;
+    color: #2a2a2a; /* Darker color for title emphasis */
   }
+
   .blog-post p {
     font-size: 1em;
-    color: #666; /* Medium gray for text */
-    line-height: 1.5;
+    color: #555; /* Neutral gray for content text */
+    line-height: 1.6;
+    margin-bottom: 15px;
   }
   
   .blog-post .author-date {
-    font-size: 0.9em;
-    color: #999; /* Lighter gray for meta info */
-    margin-bottom: 10px;
+    font-size: 0.85em;
+    color: #888; /* Soft gray for author and date */
+    margin-bottom: 8px;
   }
   
   .blog-post .read-time {
-    font-size: 0.9em;
-    color: #007bff; /* Subtle blue for read time */
-    font-weight: bold;
+    font-size: 0.85em;
+    color: #0056b3; /* Blue accent for read time */
+    font-weight: 600;
   }
   
   /* Responsive adjustments */
   @media (max-width: 600px) {
-    .blog-list {
-      grid-template-columns: 1fr;
-      padding: 10px;
-    }
-  
     .blog-post {
-      padding: 10px;
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 15px;
     }
   }
+  
