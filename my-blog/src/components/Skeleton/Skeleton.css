@@ -1,83 +1,53 @@
-/* Skeleton.css */
-
-/* Base styling for the skeleton */
 .skeleton {
+    background-color: var(--color-skeleton-bg, #e2e8f0);
     position: relative;
-    background-color: #e0e0e0;
-    border-radius: 4px;
     overflow: hidden;
   }
   
-  .skeleton--rectangular {
+  .skeleton--text {
     border-radius: 4px;
+    margin-bottom: 8px;
+    transform: scale(1, 0.6);
   }
   
   .skeleton--circular {
     border-radius: 50%;
   }
   
-  .skeleton--text {
-    height: 20px;
-    width: 100%;
-    border-radius: 3px;
-  }
-  
-  /* Animation styles */
-  .skeleton--pulse .skeleton__animation {
-    animation: pulse 1.5s infinite ease-in-out;
-  }
-  
   .skeleton--wave .skeleton__animation {
-    animation: wave 1.5s infinite ease-in-out;
-  }
-  
-  .skeleton--none .skeleton__animation {
-    display: none;
-  }
-  
-  /* Pulse animation */
-  @keyframes pulse {
-    0% {
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.4;
-    }
-  }
-  
-  /* Wave animation */
-  @keyframes wave {
-    0% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  /* Skeleton__animation styles */
-  .skeleton__animation {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.2) 75%);
-    background-size: 200% 100%;
-    animation: wave 1.5s infinite ease-in-out;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    animation: wave 1.5s infinite;
   }
   
-  /* Optional: Add a smoother transition for when the skeleton disappears */
-  .skeleton--wave,
   .skeleton--pulse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    animation: pulse 1.5s ease-in-out infinite;
   }
   
+  @keyframes wave {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
