@@ -1,0 +1,142 @@
+/* Navigation.css */
+
+.navigation {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .navigation__brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navigation__toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .navigation__toggle-icon {
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .navigation__toggle-icon::before,
+  .navigation__toggle-icon::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+  }
+  
+  .navigation__toggle-icon::before {
+    top: -8px;
+  }
+  
+  .navigation__toggle-icon::after {
+    top: 8px;
+  }
+  
+  .navigation__menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+  
+  .navigation__menu.is-open {
+    display: block;
+  }
+  
+  .navigation__item {
+    border-bottom: 1px solid #555;
+  }
+  
+  .navigation__link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+  }
+  
+  .navigation__link:hover {
+    background-color: #555;
+  }
+  
+  .navigation__link.is-active {
+    background-color: #666;
+  }
+  
+  /* Sidebar.css */
+  
+  .sidebar {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar__section {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar__item {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar__link {
+    background: none;
+    border: none;
+    color: #333;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar__link:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .sidebar__link:focus {
+    outline: none;
+    background-color: #ddd;
+  }
+  

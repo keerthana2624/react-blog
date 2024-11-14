@@ -1,0 +1,54 @@
+/* Layout.css */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .layout__content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .layout__main {
+    flex: 3;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .layout__sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-left: 1px solid #ccc;
+  }
+  
+  /* Styling for Navigation component */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling for Footer component */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
