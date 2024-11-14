@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 import PropTypes from 'prop-types';
-import './LikeButton.css';
+// import './LikeButton.css';
 
 function LikeButton({ initialLikes = 0, onLike }) {
   const [liked, setLiked] = useState(false);
